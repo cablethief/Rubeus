@@ -27,6 +27,11 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- download: current
+  artifact: Rubeus
+  patterns: |
+    **/*.exe
+
 # - task: VSTest@2
 #   inputs:
 #     platform: '$(buildPlatform)'
