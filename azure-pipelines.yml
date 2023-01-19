@@ -27,6 +27,11 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- task: PublishBuildArtifacts@1
+  displayName: Publish build artifacts
+  inputs:
+    pathtoPublish: build/Rubeus
+    artifactName: Rubeus Executable
 
 # - task: VSTest@2
 #   inputs:
