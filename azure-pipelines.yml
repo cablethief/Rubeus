@@ -30,7 +30,7 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: Publish build artifacts
   inputs:
-    pathtoPublish: build/Rubeus
+    pathtoPublish: bin/Release/
     artifactName: Rubeus Executable
 
 # - task: VSTest@2
